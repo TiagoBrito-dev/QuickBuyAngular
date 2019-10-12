@@ -9,11 +9,14 @@ namespace QuickBuy.Dominio.Entidades
         public int Id { get; set; }
         public int ProdutoId { get; set; }
         public int Quantidade { get; set; }
-        public ICollection<ItemPedido> ItensPedido { get; set; }
+        
 
         public override void Validade()
         {
-            throw new NotImplementedException();
+            if (ProdutoId == 0)
+                AdicionarCritica("Nao foi identificado qual a referencia do produto");
+            if (Quantidade == 0)
+                AdicionarCritica("Quantidade nao foi informado");
         }
     }
 }
