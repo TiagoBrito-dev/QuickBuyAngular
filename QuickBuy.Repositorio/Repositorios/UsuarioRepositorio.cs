@@ -11,7 +11,6 @@ namespace QuickBuy.Repositorio.Repositorios
         public UsuarioRepositorio()
         {
 
-        }          
-
+        }
     }
 }

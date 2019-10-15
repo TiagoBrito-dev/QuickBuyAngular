@@ -6,7 +6,7 @@ using System.Text;
 
 namespace QuickBuy.Repositorio.Repositorios
 {
-    class PedidoRepositorio : BaseRepositorio<Pedido>, IPedidoRepositorio
+    public class PedidoRepositorio : BaseRepositorio<Pedido>, IPedidoRepositorio
     {
         public PedidoRepositorio()
         {
